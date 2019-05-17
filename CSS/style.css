@@ -1,0 +1,926 @@
+*{
+	box-sizing: border-box;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+body{background-color:hsl(240, 18%, 15%);}
+.container 
+{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-color: hsl(240, 18%, 15%);
+	box-sizing: border-box;
+}
+
+/*nagłówek pomarańcze*/
+#top, #topodmiany, #topprzepisy
+{
+	background-color:hsl(240, 18%, 15%);
+	display: flex;
+	justify-content: center;
+}
+
+#top a, #topodmiany a, #topprzepisy a{text-decoration: none;}
+
+#top h3:hover, #topodmiany h3:hover, #topprzepisy h3:hover{color: rgb(255, 153, 51);}
+
+#top img, #topodmiany img, #topprzepisy img{padding-top: 50px;}
+
+h3
+{
+	font-size: 40px;
+	font-family: 'Lobster';
+	margin-top: 30px;
+	padding-top: 120px;
+	padding-left: 40px;
+	color:hsl(0, 0%, 90%) ;
+}
+
+/*Nawigacja*/
+#nav, #navodmiany, #navprzepisy
+{
+	border-radius: 30px;
+	background-color:rgb(230, 230, 230, 50%); 
+	width: 14%;
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	line-height: 106px;
+	padding-top: 10px;
+	position: static;
+}
+
+#nav a, #navodmiany a, #navprzepisy a
+{
+	font-size: 30px;
+	color: white;
+	font-family: 'Lobster';
+	text-decoration: none;
+}
+
+#nav a:hover, #navodmiany a:hover, #navprzepisy a:hover
+{
+	color: rgb(255, 153, 51);
+
+}
+
+/*ODMIANY*/
+h2
+{
+	font-family: 'Courgette';
+	font-size: 30px;
+}
+
+#text
+{
+	width: 80%;
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+#odmianyA
+{
+	width: 100%;
+	color: white;
+	/*font-family: 'Marck Script';*/
+	display: flex;
+	justify-content: center;
+	padding-right: 5px;
+	font-size: 20px;
+	margin-left: 80px;
+}
+
+#A,#B,#C,#D,#E
+{
+	background-color:rgb(217, 217, 217, 80%) ;
+	border-radius: 15%;
+	text-align: center;
+	padding-right: 13px;
+	padding-left: 13px;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+#odmianyA p,  h2
+{
+	text-align: center;
+	padding: 5px 5px;
+	font-size: 30px;
+}
+
+/*PRZEPISY*/ 
+
+#recipes
+{
+	width: 80%;
+	color: white;
+	padding:10px;
+}
+
+ul li
+{
+	line-height: 25px;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+#przepis1, #przepis2, #przepis3
+{
+	float: right;
+	width: 24%;
+	margin-left: 15px;
+	padding-left: 10px;
+}
+
+/*FORMULARZ*/
+
+#form
+{
+	
+	width: 80%;
+	margin-left: 250px;
+	display: flex;
+	justify-content: center;
+	/*background-color: rgb(500, 122, 0, 60%);*/
+	font-size: 40px;
+	font-family:'Amatic SC';
+	padding: 10px 10px;
+	color:white;
+	line-height: 55px;
+	/*border: solid;*/
+}
+
+#form textarea{width: 600px;}
+
+main p
+
+{
+	font-size: 40px;
+	font-family:'Amatic SC';
+	padding: 10px 10px;
+	color:white;
+	line-height: 55px;
+	display: flex;
+	justify-content: center;
+}
+
+#form img
+
+{
+	float:right;
+	padding-top: 10%;
+}
+
+#imie, #email{display: block;}
+
+.ordered li{list-style-type: decimal;}
+
+/* stylowanie slidera zdjęć strony głównej*/
+#slider
+{
+	width: 50%;
+	height: 60%;
+	float: right;
+	margin-right: 18%;
+	margin-bottom: 5%;
+	margin-top: 5%;
+	border-style: solid;
+	border-color:rgb(255, 102, 0) ;
+}
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  /*-webkit-backface-visibility: hidden;*/
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+/*RWD strony głównej i podstron z wyjątkiem podstrony historia*/
+
+@media screen and (max-width: 1400px) and (min-width: 751px)
+
+{
+
+#topodmiany, #topprzepisy{margin-left: 20%;}
+
+#nav{min-width: 18%;}
+
+#navodmiany, #navprzepisy
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 15%;
+	
+}
+
+#text
+{
+	width: 75%;
+	display: flex;
+	float: right;
+	margin-right: 30px;
+}
+
+#odmianyA
+{
+	
+	margin-left:0px;
+	margin-right: 0px;
+	padding: 0px;
+	margin-top: 10px;
+	padding-top: 10px;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+#A,#B,#C,#D,#E
+{
+	padding-top: 5px;
+	margin-top: 5px;
+}
+
+#przepis1, #przepis2 
+{
+	margin-left: 180px;
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	line-height: 35px;
+}
+
+#przepis3
+{
+	width: 80%;
+	margin-left: 180px;
+	display: flex;
+	flex-direction: column;
+	line-height: 35px;
+}
+
+#przepis1, #przepis2, #przepis3{font-size: 25px;}
+
+#recipes h3{padding-top: 10px;}
+
+#topodmiany img, #topprzepisy img
+{
+	max-width: 200px;
+	max-height: 200px;
+}
+
+#topodmiany h3, #top h3, #topprzepisy h3{padding-top: 70px;}
+
+#top img
+{
+	max-width: 220px;
+	max-height: 220px;
+}
+
+#form
+{
+	width: 75%;
+	float: right;
+	margin:0;
+	padding:0;
+	margin-left: 5px;
+	margin-top: 10px;
+}
+
+#form img
+{
+	max-height: 500px;
+	max-width: 600px;
+}
+
+#form textarea{width: 600px;}
+
+/*dodatkowa możliwość zmiany stylu*/
+/*
+main p 
+{
+	font-size: 40px;
+	font-family:'Amatic SC';
+	padding: 10px 10px;
+	color:white;
+	line-height: 55px;
+	display: flex;
+	justify-content: center;
+}*/
+
+}
+
+@media screen and (max-width: 750px) and (min-width: 651px)
+{
+
+#navprzepisy img{max-width:  20px;}
+
+#navprzepisy a{font-size: 25px;}
+
+#navprzepisy {
+	display: flex;
+	flex-direction: row;
+	position: sticky;
+	top: 0;
+	align-self: flex-start;
+	width: 100%;
+	margin: 0;
+	margin-left: 0px;
+	margin-top: 10px;
+	padding: 0;
+	padding-top: 10px;
+	justify-content: space-around;
+}
+
+#nav
+{
+	width: 100%;
+	margin: 0;
+	margin-left: 0px;
+	margin-top: 10px;
+	padding: 0;
+	padding-top: 20px;	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color:rgb(230, 230, 230, 20%); 
+}
+
+#nav img
+{
+	max-height: 40px;
+	max-width: 40px;
+}
+
+#navodmiany
+{
+	margin: 0;
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 19%;
+	padding: 0;
+	padding-top: 20px;
+	position: fixed;
+}
+
+#slider 
+{
+	clear: both;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-right: 0;
+	margin-left: 0;
+	padding: 0;
+}
+	
+#top, #topodmiany 
+{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#top img, #topodmiany img 
+{	
+	margin: 0;
+	padding: 0;
+	max-width: 40px;
+	max-height: 40px;
+}
+
+#top h3, #topodmiany h3
+{
+	margin: 0;
+	padding: 0;
+	padding-left: 10px;	
+}
+
+#topprzepisy img
+{
+	max-width: 120px;
+	max-height: 120px;
+}
+
+#topprzepisy h3
+{
+	margin: 0;
+	margin-top: 60px;
+	margin-bottom: 25px;
+	padding: 0;
+	padding-left: 10px;
+}
+
+#text
+{
+	width: 75%;
+	display: flex;
+	float: right;
+}
+
+#odmianyA
+{
+	width: 100%;
+	margin:0px;
+	padding: 0px;
+	margin-top: 10px;
+	padding-top: 10px;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+#A,#B,#C,#D,#E
+{
+	padding-top: 5px;
+	margin-top: 5px;
+}
+
+#przepis1, #przepis2, #przepis3
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	line-height: 35px;
+}
+
+#przepis1, #przepis2, #przepis3{font-size: 25px;}
+
+#recipes h3{padding-top: 10px;}
+
+#form
+{
+	clear: both;
+	width: 100%;
+	margin:0;
+	padding:0;
+	margin-top: 10px;
+}
+
+#form img
+{
+	max-height: 300px;
+	max-width: 400px;
+}
+
+}
+
+@media screen and (max-width: 650px) and (min-width: 501px)
+{
+
+#navprzepisy {
+	display: flex;
+	flex-direction: row;
+	position: sticky;
+	top: 0;
+	align-self: flex-start;
+	width: 100%;
+	margin: 0;
+	margin-left: 0px;
+	margin-top: 10px;
+	padding: 0;
+	padding-top: 10px;
+	justify-content: space-around;
+}
+
+#nav
+{
+	width: 100%;
+	margin: 0;
+	margin-left: 0px;
+	margin-top: 10px;
+	padding: 0;
+	padding-top: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color:rgb(230, 230, 230, 20%); 
+}
+
+#nav img
+{
+	max-height: 20px;
+	max-width: 20px;
+}
+
+#nav a{font-size: 25px;}
+
+#topprzepisy img
+{
+	max-width: 150px;
+	max-height: 150px;
+}
+	
+#navprzepisy img{max-width:  25px;}
+
+#navprzepisy a{font-size: 25px;}
+
+
+#navodmiany
+{		
+	width: 100%;
+	margin: 0;
+	margin-left: 0px;
+	margin-top: 10px;
+	padding: 0;
+	padding-top: 20px;
+	display: flex;	
+}
+
+#slider
+{
+	clear: both;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-right: 0;
+	margin-left: 0;
+	padding: 0;
+}
+	
+	
+#top, #topodmiany 
+{
+	clear: both;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#top img, #topodmiany img 
+{
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+
+#topprzepisy h3
+{
+	margin-top:1px;
+	padding-top:70px;
+	float: right;
+}
+
+#top h3, #topodmiany h3
+{
+	margin: 0;
+	padding: 0;
+}
+
+#text{width: 100%;}
+
+#odmianyA
+{		
+	width: 100%;
+	margin:0px;
+	padding: 0px;
+	margin-top: 10px;
+	padding-top: 10px;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+}
+	
+#A,#B,#C,#D,#E
+{
+	padding-top: 5px;
+	margin-top: 5px;
+}
+#przepis1, #przepis2, #przepis3
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	line-height: 35px;
+}
+
+#przepis1, #przepis2, #przepis3{font-size: 25px;}
+
+#recipes h3{padding-top: 10px;}
+
+#form
+{	
+	width: 100%;
+	margin:0;
+	padding:0;
+	margin-top: 10px;
+}
+
+#form img{display:none;}
+
+#form textarea{width: 250px;}
+
+}
+
+@media screen and (max-width: 500px) and (min-width: 301px)
+{
+
+#text{width: 100%;}
+
+#navprzepisy 
+{
+		
+	width: 100%;
+	margin: 0;
+	margin-left: 0px;
+	margin-top: 10px;
+	padding: 0;
+	padding-top: 20px;
+	justify-content: space-around;
+}
+
+#nav
+{
+	width: 100%;
+	margin: 0;
+	margin-left: 0px;
+	margin-top: 10px;
+	padding: 0;
+	padding-top: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color:rgb(230, 230, 230, 20%); 
+}
+
+#nav img{display: none;}
+
+#nav a{font-size: 20px;}
+	
+#navprzepisy img{max-width:  35px;}
+
+#navprzepisy a{font-size: 35px;}
+
+#navodmiany
+{
+	clear: both;
+	width: 100%;
+	margin: 0;
+	margin-left: 0px;
+	margin-top: 10px;
+	padding: 0;
+	padding-top: 20px;
+	display: flex;
+	background-color:rgb(230, 230, 230, 20%); 	
+}
+
+#slider 
+{
+	clear: both;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-right: 0;
+	margin-left: 0;
+	padding: 0;
+}
+
+#topprzepisy img{display: none;}
+	
+#top, #topodmiany 
+{
+	clear: both;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#top img, #topodmiany img
+{
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+
+#top h3, #topodmiany h3, #topprzepisy h3
+{
+	margin: 0;
+	padding: 0;	
+}
+
+#odmianyA
+{
+	clear:both;
+	width: 100%;
+	margin:0px;
+	padding: 0px;
+	margin-top: 10px;
+	padding-top: 10px;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+#A,#B,#C,#D,#E
+{
+	padding-top: 5px;
+	margin-top: 5px;
+}
+
+#przepis1, #przepis2, #przepis3
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	line-height: 35px;
+}
+
+#przepis1, #przepis2, #przepis3
+{
+	font-size: 28px;
+	flex-wrap: wrap;
+}
+
+#recipes h3
+{
+	margin: 0;
+	padding: 0;
+	padding-top: 10px;
+}
+
+#form
+{
+	clear: both;
+	width: 100%;
+	margin:0;
+	padding:0;
+	margin-top: 10px;
+}
+
+#form img{display:none;}
+
+#form textarea{width: 200px;}
+
+}
+
+@media screen and (max-width: 300px)
+{
+
+#text{width: 100%;}
+
+#navprzepisy
+{		
+	width: 100%;
+	margin: 0;
+	margin-left: 0px;
+	margin-top: 10px;
+	padding: 0;
+	padding-top: 20px;
+	justify-content: space-around;
+}
+
+#navprzepisy img{max-width:  40px;}
+
+#navprzepisy a{font-size: 30px;}
+
+#nav, #navodmiany {
+	clear: both;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	margin-top: 10px;
+	padding-top: 15px;
+	display: flex;
+	line-height: 80px;
+	background-color:rgb(230, 230, 230, 20%); 
+}
+#slider {display: none;}
+	
+#topprzepisy img
+{
+	display: none;
+}
+
+#topprzepisy h3
+{
+	margin:0;
+	padding:0;
+	display: flex;
+	justify-content: center;
+}
+
+#top , #topodmiany
+{
+	clear: both;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#top img , #topodmiany img{display: none;}
+
+#top h3, #topodmiany h3
+{
+	margin: 0;
+	padding: 0;
+	font-size: 25px;	
+}
+
+#odmianyA
+{
+	clear:both;
+	width: 100%;
+	margin:0px;
+	padding: 0px;
+	margin-top: 10px;
+	padding-top: 10px;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+#A,#B,#C,#D,#E
+{
+	padding-top: 5px;
+	margin-top: 5px;
+}
+
+#text p, h2{word-break: break-all;}
+
+#form
+{
+	width: 100%;
+	margin:0;
+	padding:0;
+	margin-top: 10px;
+}
+
+#form img{display:none;}
+
+#form textarea{width: 120px;}
+
+#recipes 
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	line-height: 35px;
+}
+
+#przepis1, #przepis2, #przepis3{font-size: 28px;}
+
+#recipes h3
+{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	padding-top: 10px;
+}
+}

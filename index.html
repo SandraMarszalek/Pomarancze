@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<title>Pomarańcze</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="CSS/style.css" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+
+</head>
+
+<body>
+<div class="container">
+<header>
+<div id="top">
+<img src="foto/pomarancza.png" alt="error img"><a href="index.html"><h3>POMARAŃCZE</h3></a>
+</div>
+</header>
+<nav>
+	<div id="nav">
+<img src="foto/ikonka.png" alt=""><a href="odmiany.html">Odmiany</a>
+	<img src="foto/ikon.png" alt=""><a href="przepisy.html">Przepisy</a>
+		<img src="foto/icon.png" alt=""><a href="historia.html">Historia</a>
+		<img src="foto/formicon.png" alt=""><a href="formularz.html">Formularz</a>
+	</div>
+</nav>
+
+<main>
+
+	<div id="slider">
+	<ul class="rslides">
+            <li><img src="foto/1.jpg" alt=""></li>
+            <li><img src="foto/2.jpg" alt=""></li>
+            <li><img src="foto/3.jpg" alt=""></li>
+            <li><img src="foto/4.jpg" alt=""></li>
+            <li><img src="foto/5.jpg" alt=""></li>
+            <li><img src="foto/6.jpg" alt=""></li>
+            <li><img src="foto/7.jpg" alt=""></li>
+            <li><img src="foto/8.jpg" alt=""></li>
+            <li><img src="foto/9.jpg" alt=""></li>
+            <li><img src="foto/10.jpg" alt=""></li>
+            <li><img src="foto/11.jpg" alt=""></li>
+        </ul> 
+        	<script>
+  $(function() {
+    $(".rslides").responsiveSlides();
+  });
+  $(".rslides").responsiveSlides({
+  auto: true,             // Boolean: Animate automatically, true or false
+  speed: 1100,            // Integer: Speed of the transition, in milliseconds
+  timeout: 15000,          // Integer: Time between slide transitions, in milliseconds
+  pager: false,           // Boolean: Show pager, true or false
+  nav: false,             // Boolean: Show navigation, true or false
+  random: true,          // Boolean: Randomize the order of the slides, true or false
+  pause: false,           // Boolean: Pause on hover, true or false
+  pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+  //prevText: "Wstecz",   // String: Text for the "previous" button
+ // nextText: "Dalej",       // String: Text for the "next" button
+  //maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+ // navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+ // manualControls: "",     // Selector: Declare custom pager navigation
+  //namespace: "rslides",   // String: Change the default namespace used
+  before: function(){},   // Function: Before callback
+  after: function(){}     // Function: After callback
+});
+</script>
+    </div>
+</main>
+<!-- nie miałam co umieścić w stopce, nie była mi potrzebna w związku z czym nie występuje w projekcie-->
+</div>
+</body>
+</html>

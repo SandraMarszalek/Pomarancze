@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<title>Pomarańcze</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="CSS/style.css" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet"> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+<script src="js/lstorage.js" async></script>
+
+</head>
+
+<body>
+<div class="container">
+<header>
+<div id="top">
+<img src="foto/pomarancza.png" alt=""><a href="index.html"><h3>POMARAŃCZE</h3></a>
+</div>
+</header>
+<nav>
+	<div id="nav">
+<img src="foto/ikonka.png" alt=""><a href="odmiany.html">Odmiany</a>
+	<img src="foto/ikon.png" alt=""><a href="przepisy.html">Przepisy</a>
+		<img src="foto/icon.png" alt=""><a href="historia.html">Historia</a>
+		<img src="foto/formicon.png" alt=""><a href="formularz.html">Formularz</a>
+	</div>
+</nav>
+
+<main>
+						<p>Zostańmy w kontakcie!</p>
+			<div id="form">
+						<form action="#" method="post">
+							<img src="foto/oform.png" alt="">
+							<label for="imie">Imię<input type="text" required="required" id="imie"></label>
+							<label for="email">Adres e-mail<input type="email" required="required" id="email"></label>
+							<div><label>Płeć</label>
+							<input type="checkbox"/>Kobieta <input type="checkbox"/>Mężczyzna</div>
+							<label for="data">Data urodzenia</label>
+					  		<input type="date" id="data" /><br>
+					  		<label>Czy strona ci się podoba?</label><br>
+					  			Tak<input type="radio"/>Nie<input type="radio"/>
+							<div><label>Które pomarańcze lubisz najbardziej?</label><br>
+								<select name="pomarancze">
+									<option>Bergamotki</option>
+									<option>Pomarańcze chińskie</option>
+									<option>Pomarańcze gorzkie</option>
+									<option>Limeta</option>
+									<option>Pomarańcze olbrzymie</option>
+								</select></div>
+							<div><label>Które przepisy już wypróbowałeś?</label><br>
+								<input type="checkbox"/>Konfitura pomarańczowa<br>
+								<input type="checkbox"/>Ciasto pomarańczowe<br>
+								<input type="checkbox"/>Konfitura pomarańczowa<br></div>
+							<div><label>Jaki przepis chciałbyś/chciałabyś zobaczyć na stronie?<textarea id="jakiprzepis"></textarea></label></div>
+							<input type="reset" value="Wyczyść"/>
+							<button name="Wyślij" onclick="save()">Wyślij</button>
+						</form>
+</div>
+</main>
+<!-- nie miałam co umieścić w stopce, nie była mi potrzebna w związku z czym nie występuje w projekcie-->
+</div>
+</body>
+</html>
